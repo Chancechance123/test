@@ -1,25 +1,19 @@
-package com.xyc.http.servlet;
-/**
+package com.xyc.http.servlet;/**
  * @author XYC
  * @version 1.0
  * @DAte
  */
 
-
 import javax.servlet.*;
 import javax.servlet.http.*;
 import java.io.IOException;
-import java.io.PrintWriter;
 
-public class LoginServlet extends HttpServlet {
+public class T1Servlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("doGet()方法被调用~");
-        response.setContentType("text/html;charset=utf-8");
-        PrintWriter writer = response.getWriter();
-        writer.print("<h1>登录成功</h1>");
-        writer.flush();
-        writer.close();
+        doPost(request,response);
+        response.sendRedirect("/http/hi.html");
+
     }
 
     @Override

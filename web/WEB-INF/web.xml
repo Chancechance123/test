@@ -11,4 +11,12 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/login</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>T1Servlet</servlet-name>
+        <servlet-class>com.xyc.http.servlet.T1Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>T1Servlet</servlet-name>
+        <url-pattern>/t1</url-pattern>
+    </servlet-mapping>
 </web-app>
